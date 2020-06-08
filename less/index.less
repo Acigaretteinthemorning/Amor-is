@@ -1,0 +1,527 @@
+@import "./common.less";
+// 头部
+header{
+    background: #f5f5f5;
+    border-bottom: 1px solid #e6e6e6;
+    div{
+        line-height: 40px;
+        .displayFlex();
+        justify-content: space-between;
+        .header-left{
+            ul{
+                i{
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    vertical-align: -5px;
+                    margin-right: 6px;
+                }
+                .displayFlex();
+                .left{
+                    
+                    span{
+                        &:nth-child(1){
+                            font-size: 12px;
+                            color: #666;
+                            i{
+                                background-position: -25px -5px;
+                            }
+                        }
+                        &:nth-child(2){
+                            color: #666;
+                            font-size: 17px;
+                            font-weight: 900;
+                        }
+                    }
+                }
+                .right{
+                    a{
+                        font-size: 12px;
+                    }
+                    i{
+                        background-position: -25px -27px;
+                    }
+
+                }
+            }
+        }
+        .header-right{
+            ul{
+                .displayFlex();
+                a{
+                    font-size: 12px;
+                    padding: 0 10px;
+                }
+                .divide{
+                    a{
+                        border-left: 1px solid #ccc;
+                    }
+                }
+            }
+        }
+    }
+}
+// nav 导航栏和logo
+nav{
+    >div{
+        .displayFlex();
+        justify-content: space-between;
+        height: 100px;
+        .logo{
+            align-self: center;
+        }
+        .nav_right{
+            align-self: center;
+            ul{
+                .displayFlex();
+               li{
+                   a{
+                       color: #454545;
+                       padding: 6px 0;
+                       margin: 0 20px;
+                       font-size: 14px;
+                       &.current{
+                           border-bottom: 2px solid #d39938;
+                        }
+                    }
+                    .enter-my-account{
+                        color: #d39938;
+                        display: inline-block;
+                        line-height: 33px;
+                        padding: 0 11px;
+                        margin: -6px 20px 0 20px;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        background: #f9f9f9;
+                        border: 1px solid #e6e6e6;
+                        &:hover{
+                            text-decoration:none;
+                            background: #ddd;
+                            border: 1px solid #ddc;
+                        }
+                        i{
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            background-position: -51px -2px;
+                            margin: -4px 10px 0px 0px;
+                        }
+                    }
+               }
+            }
+        }
+    }
+}
+// 工作时间和公告
+.notice{
+    margin: 20px 0;
+    >div{
+        .displayFlex();
+        justify-content: space-between;
+        .notice-left{
+            font-size: 14px;
+        }
+        .notice-right{
+            .displayFlex();
+            ul{
+                margin: 0 30px;
+            }
+            a{
+                color: #000;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+// 产品专区头部 借款
+.list-title{
+    >div{
+        padding-bottom: 10px;
+        .displayFlex();
+        justify-content: space-between;
+        h3{
+            color: #666;
+            font-size: 18px;
+        }
+        a{
+            color: #999;
+            font-size: 14px;
+        }
+        .list-span{
+            span{
+                color: #d7a34c;
+                padding-right: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+// 小额贷款
+.smallloan{
+    >div{
+        color: #f5f5f5;
+    .displayFlex();
+    border-top: 2px solid #f5a200;
+        .smal-left{
+            background: #f5a200;
+            height: 450px;
+            flex: 1;
+            padding: 50px 0 0 30px;
+            position: relative;
+            h4{
+                font-size: 36px;
+            }
+            .listIntro-desc{
+                font-size: 18px;
+                border-bottom: 1px solid #f5f5f5;
+                margin: 0 35px 18px 0;
+                padding-bottom: 10px;
+            }
+            .kx-home-listIntro-content{
+                font-size: 14px;
+                line-height: 3px;
+            }
+            .listIntro-p2pBtns{
+                position: absolute;
+                bottom: 46px;
+                a{
+                    display: inline-block;
+                    margin: 6px 6px 6px 0;
+                    width: 70px;color: #f5f5f5;
+                    font-size: 16px;
+                    background: #e98703;
+                    text-align: center;
+                    padding: 6px 0;
+                }
+            }
+            .listIntro-question{
+                color: #f5f5f5;
+                position: absolute;
+                bottom: 20px;
+                font-size: 14px;
+            }
+            .listIntro-bjt{
+                width: 130px;
+                height: 140px;
+                position: absolute;
+                left: 160px;
+                bottom: 0px;
+            }
+            .kx-home-listIntro-bg{
+                background-position: -158px -126px;
+            }
+        }
+
+        // 右边
+        .smal-right{
+            .smal_li{
+                padding: 0 28px 4px 28px;
+                &:hover{
+                    background: rgb(247, 243, 243);
+                }
+                .kx-progress-bar{
+                    color: #c88700;
+                    font-size: 14px;
+                    width: 160px;
+                    margin-bottom: 4px;
+                    margin-left: 150px;
+                    
+                    .progress-pro{
+                        height: 5px;
+                        width: 118px;
+                        display: inline-block;
+                        background-color: #e5e5e5;
+                        vertical-align: 2px;
+                        overflow: hidden;
+                        border-radius: 6px;
+                        .progress-box{
+                            background: #1476c9;
+                            height: 100%;
+                            background: #d7a34c;
+                        }
+                    }
+                    .kx-investableList-action-invest{
+                        width: 160px;
+                        height: 30px;
+                        background: #ccc;
+                        border-radius: 4px;
+                        text-align: center;
+                        line-height: 30px;
+                        margin-top: 8px;
+                        a{
+                            display: inline-block;
+                            font-size: 14px;
+                           color: #ffffff;
+                        }
+                    }
+                }
+            }
+            flex: 3.4;
+            .listprod{
+                .displayFlex();
+                padding: 20px 0;
+            }
+            .kx-investableList-desc{
+                .displayFlex();
+                line-height: 9px;
+                border-bottom: 1px solid #eaeaea;
+                padding-bottom: 30px;
+            
+                li{
+                    position: relative;
+                    +li{
+                        border-left: 1px dashed #eaeaea;
+                        padding-left: 20px;
+                    }
+                    p{
+                        color: #666;
+                        font-size: 16px;
+                    }
+                    span{
+                        color: #999;
+                        font-size: 12px;
+                        // position: absolute;
+                        // top: 0;
+                        // left: 0;
+                    }
+                }
+                .kx-investableList-desc-period{
+                    width: 110px;
+                }
+            }
+        }
+    }
+}
+.list-title_le{
+    >div{
+        padding-top: 22px;
+        padding-bottom: 10px;
+        .displayFlex();
+        justify-content: space-between;
+        h3{
+            color: #666;
+            font-size: 18px;
+        }
+        a{
+            color: #999;
+            font-size: 14px;
+        }
+        .list-span{
+            span{
+                color: #d7a34c;
+                padding-right: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.smallloan_bt{
+    >div{
+        color: #f5f5f5;
+    .displayFlex();
+    border-top: 2px solid #36C9A1;
+        .smal-left{
+            background: #36C9A1;
+            height: 450px;
+            flex: 1;
+            padding: 50px 0 0 30px;
+            position: relative;
+            h4{
+                font-size: 36px;
+            }
+            .listIntro-desc{
+                font-size: 18px;
+                border-bottom: 1px solid #f5f5f5;
+                margin: 0 35px 18px 0;
+                padding-bottom: 10px;
+            }
+            .kx-home-listIntro-content{
+                font-size: 14px;
+                line-height: 3px;
+            }
+            .listIntro-p2pBtns{
+                position: absolute;
+                bottom: 46px;
+                a{
+                    display: inline-block;
+                    margin: 6px 6px 6px 0;
+                    width: 70px;color: #f5f5f5;
+                    font-size: 16px;
+                    background: #36C9A1;
+                    text-align: center;
+                    padding: 6px 0;
+                }
+            }
+            .listIntro-question{
+                color: #f5f5f5;
+                position: absolute;
+                bottom: 20px;
+                font-size: 14px;
+            }
+            .listIntro-bjt{
+                width: 130px;
+                height: 140px;
+                position: absolute;
+                left: 160px;
+                bottom: 0px;
+            }
+            .kx-home-listIntro-bg{
+                background-position: 0 -287px;
+            }
+        }
+
+        // 右边
+        .smal-right{
+            .smal_li{
+                &:hover{
+                    background: rgb(247, 243, 243);
+                }
+                padding: 0 28px 4px 28px;
+                .kx-progress-bar{
+                    color: #c88700;
+                    font-size: 14px;
+                    width: 160px;
+                    margin-bottom: 4px;
+                    margin-left: 150px;
+                    
+                    .progress-pro{
+                        height: 5px;
+                        width: 118px;
+                        display: inline-block;
+                        background-color: #e5e5e5;
+                        vertical-align: 2px;
+                        overflow: hidden;
+                        border-radius: 6px;
+                        .progress-box{
+                            background: #1476c9;
+                            height: 100%;
+                            background: #d7a34c;
+                        }
+                    }
+                    .kx-investableList-action-invest{
+                        width: 160px;
+                        height: 30px;
+                        background: #ccc;
+                        border-radius: 4px;
+                        text-align: center;
+                        line-height: 30px;
+                        margin-top: 8px;
+                        a{
+                            display: inline-block;
+                            font-size: 14px;
+                           color: #ffffff;
+                        }
+                    }
+                }
+            }
+            flex: 3.4;
+            .listprod{
+                .displayFlex();
+                padding: 20px 0;
+            }
+            .kx-investableList-desc{
+                .displayFlex();
+                line-height: 9px;
+                border-bottom: 1px solid #eaeaea;
+                padding-bottom: 30px;
+            
+                li{
+                    position: relative;
+                    +li{
+                        border-left: 1px dashed #eaeaea;
+                        padding-left: 20px;
+                    }
+                    p{
+                        color: #666;
+                        font-size: 16px;
+                    }
+                    span{
+                        color: #999;
+                        font-size: 12px;
+                        // position: absolute;
+                        // top: 0;
+                        // left: 0;
+                    }
+                }
+                .kx-investableList-desc-period{
+                    width: 110px;
+                }
+            }
+        }
+    }
+}
+
+// index-special
+.index-special{
+    margin-top: 36px;
+    background: url(../../images/bg2.png) no-repeat;
+    width: 100%;
+    height: 680px;
+    background-size: cover;
+    section{
+        .displayFlex();
+        justify-content: space-between;
+        .special-tab-list{
+            .special_1{
+                padding-left: 20px;
+                margin-bottom: 45px;
+                border-radius: 2px;
+                &.box_2{
+                    border-left: 5px solid #df7f00;
+                }
+            }
+            width: 500px;
+            margin-top: 160px;
+            h4{
+                color: #fff;
+                font-size: 20px;
+                
+            }
+            p{
+                color: rgba(255, 255, 255, 0.788);
+                font-size: 12px;
+
+            }
+        }
+        .special-contents{
+            width: 580px;height: 360px;
+            margin-top: 160px;
+            .special-img{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+// footerFt
+.footerFt{
+    background: #494f5d;
+    line-height: 46px;
+    .footer-l2{
+        .displayFlex();
+        span{
+            color: #fff;
+            margin-right: 22px;
+        }
+        .footer-l3{
+            ul{
+                .displayFlex();
+                li{
+                    margin: 0 20px;
+                    cursor: pointer;
+                    &:hover{
+                        color: #800020;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+     color: #666;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+img{
+    border: 0; 
+    vertical-align: middle;
+}
+// 清除input框内边距
+input{
+    padding: 0;
+    outline: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+}
+// 全屏
+.container-fl{
+    width: 100%;
+    min-width: 1200px;
+}
+// 版心
+.min-w1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+.min-w1000{
+    width: 1000px;
+    margin: 0 auto;
+}
+// 弹性布局
+.displayFlex(){
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+}
+.icon{
+    background: url(../../images/icon.png) left center no-repeat;
+}
+.fb-home-icons{
+    background: url(../../images/home_sprite.png);
+}
+.kx-iconTip-base{
+    color: #daa346;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: #fff !important;
+    border: 1px solid #daa346;
+    cursor: pointer;
+    margin: 0 16px;
+    font-size: 12px;
+}
+.kx-investableList-desc-amount{
+    width: 130px;
+    padding: 0 20px;
+}
+.kx-investableList-desc-characteristicName{
+    width: 165px;
+}
+header{
+    background: #f5f5f5;
+    border-bottom: 1px solid #e6e6e6;
+    div{
+        line-height: 40px;
+        .displayFlex();
+        justify-content: space-between;
+        .header-left{
+            ul{
+                i{
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    vertical-align: -5px;
+                    margin-right: 6px;
+                }
+                .displayFlex();
+                .left{
+                    
+                    span{
+                        &:nth-child(1){
+                            font-size: 12px;
+                            color: #666;
+                            i{
+                                background-position: -25px -5px;
+                            }
+                        }
+                        &:nth-child(2){
+                            color: #666;
+                            font-size: 17px;
+                            font-weight: 900;
+                        }
+                    }
+                }
+                .right{
+                    a{
+                        font-size: 12px;
+                    }
+                    i{
+                        background-position: -25px -27px;
+                    }
+
+                }
+            }
+        }
+        .header-right{
+            ul{
+                .displayFlex();
+                a{
+                    font-size: 12px;
+                    padding: 0 10px;
+                }
+                .divide{
+                    a{
+                        border-left: 1px solid #ccc;
+                    }
+                }
+            }
+        }
+    }
+}
+// nav 导航栏和logo
+nav{
+    >div{
+        .displayFlex();
+        justify-content: space-between;
+        height: 100px;
+        .logo{
+            align-self: center;
+        }
+        .nav_right{
+            align-self: center;
+            ul{
+                .displayFlex();
+               li{
+                   a{
+                       color: #454545;
+                       padding: 6px 0;
+                       margin: 0 20px;
+                       font-size: 14px;
+                       &.current{
+                           border-bottom: 2px solid #d39938;
+                        }
+                    }
+                    .enter-my-account{
+                        color: #d39938;
+                        display: inline-block;
+                        line-height: 33px;
+                        padding: 0 11px;
+                        margin: -6px 20px 0 20px;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        background: #f9f9f9;
+                        border: 1px solid #e6e6e6;
+                        &:hover{
+                            text-decoration:none;
+                            background: #ddd;
+                            border: 1px solid #ddc;
+                        }
+                        i{
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            background-position: -51px -2px;
+                            margin: -4px 10px 0px 0px;
+                        }
+                    }
+               }
+            }
+        }
+    }
+}
+
+// index-footer
+footer{
+    margin-top: 88px;
+    background: #5e687e;
+    section{
+        padding-top: 80px;
+        padding-bottom: 120px;
+        .displayFlex();
+        .footer_box1{
+            width: 420px;
+            .displayFlex();
+            
+            .footer_1{
+                padding-right: 99px;
+                h4{
+                    color: #fff;
+                    font-size: 18px;
+                    padding-bottom: 20px;
+                }
+                p{
+                    color: #fff;
+                    font-size: 14px;
+                } 
+            }
+            .footer_2{
+                h4{
+                    padding-bottom: 20px;
+                    color: #fff;
+                    font-size: 18px;
+                }
+                p{
+                    color: #fff;
+                    font-size: 14px;
+                } 
+            }
+        }
+        .footer_3{
+            margin-right: 177px;
+            .box_div{
+                .displayFlex();
+                p{
+                    color: #fff;
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+            }
+            h4{
+                color: #fff;
+                font-size: 18px;
+                padding-bottom: 20px;
+            }
+            img{
+                width: 140px;
+                height: 140px;
+                margin-right: 40px;
+            }
+        }
+        .footer_4{
+            color: #fff;
+            .contact-title{
+                font-size: 18px;
+                line-height: 18px;
+                margin-bottom: 32px;
+            }
+            .service-call{
+                font-size: 32px;
+                line-height: 32px;
+                margin-bottom: 8px;
+            }
+            .complain-wrap{
+                min-height: 80px;
+            }
+        }
+
+    }
+}
