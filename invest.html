@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./lib/bootstrap4/css/bootstrap.min.css">
+    <!-- common -->
+    <link rel="stylesheet" href="./dist/css/common.min.css">
+    <!-- index.css -->
+    <link rel="stylesheet" href="./dist/css/invest.min.css">
+    <title>开鑫贷-投资列表</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="container-fl">
+        <div class="min-w1200">
+            <!-- 左边 -->
+            <div class="header-left">
+                <ul>
+                    <li class="left">
+                        <span>
+                            <i class="icon"></i>
+                            服务电话:
+                        </span>
+                        <span>8888:0828:3838</span>
+                    </li>
+                    <li class="right">
+                        <span>
+                            <a href="#">下载客户端</a>
+                            <i class="icon"></i>
+                        </span>
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 右边 -->
+            <div class="header-right">
+                <ul>
+                    <li>
+                        <a href="#">前往开鑫金服</a>
+                    </li>
+                    <li>
+                        <a href="#">站点地图</a>
+                    </li>
+                    <li>
+                        <a href="#">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="#">帮助中心</a>
+                    </li>
+                    <li class="divide">
+                        <a href="./login.html">立即登录</a>
+                    </li>
+                    <li>
+                        <a href="#">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 导航栏 Navbar -->
+    <nav class="container-fl">
+        <div class="min-w1200">
+            <!-- 左边 -->
+            <div class="logo">
+                <a href="#">
+                    <img src="./images/logo_kxd.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/kxd-slogan.png" alt="">
+                </a>
+            </div>
+            <!-- 右边 -->
+            <div class="nav_right">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./invest.html" class="current">
+                            我要出借
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./indexLoan.html">
+                            我要借款
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./personal.html" class="enter-my-account">
+                            <i class="icon"></i>
+                            <span>我的账户</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 投资列表 -->
+    <div class="container ">
+        <h4 class="page-title">投资列表</h4>
+    </div>
+    <form action="#" class="container">
+        <div>
+            <span>标的状态</span>
+            <button class="btn btn-primary btn-group box_box" type="submit">全部标</button>
+            <button class="btn btn-primary" type="submit">招标中</button>
+            <button class="btn btn-primary" type="submit">还款中</button>
+         </div>
+    </form>
+    <table class="table table-striped container">
+        <thead>
+          <tr>
+            <th scope="col">借款人</th>
+            <th scope="col">借款标题</th>
+            <th scope="col">年利率</th>
+            <th scope="col">金额</th>
+            <th scope="col">还款方式</th>
+            <th scope="col">进度</th>
+            <th scope="col">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">张三</th>
+            <td>给我2000度过难关</td>
+            <td> 10.00%</td>
+            <td>2,000.00</td>
+            <td>按月分期还款</td>
+            <td>99.99%</td>
+            <td>
+                <button type="button" class="btn btn-danger button_box">查看</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">李四</th>
+            <td>给我20000度过难关</td>
+            <td> 10.00%</td>
+            <td>2,000.00</td>
+            <td>按月分期还款</td>
+            <td>99.99%</td>
+            <td>
+                <button type="button" class="btn btn-danger button_box">查看</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">二娃子</th>
+            <td>给我2000度过难关</td>
+            <td> 15.00%</td>
+            <td>2,000.00</td>
+            <td>按月分期还款</td>
+            <td>99.99%</td>
+            <td>
+                <button type="button" class="btn btn-danger button_box">查看</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">王麻子</th>
+            <td>给我20010度过难关</td>
+            <td> 20.00%</td>
+            <td>2,000.00</td>
+            <td>按月分期还款</td>
+            <td>99.99%</td>
+            <td>
+                <button type="button" class="btn btn-danger button_box">查看</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+</body>
+
+</html>

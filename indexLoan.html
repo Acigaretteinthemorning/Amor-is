@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="./dist/css/indexLoan.min.css">
     <title>开鑫贷-发布借款</title>
 </head>
+
 <body>
     <!-- 头部 -->
     <header class="container-fl">
@@ -35,7 +37,7 @@
                 </ul>
             </div>
     </header>
-    
+
     <nav class="container-fl">
         <div class="min-w1200">
             <!-- 左边 -->
@@ -51,12 +53,12 @@
             <div class="nav_right">
                 <ul>
                     <li>
-                        <a href="./index.html" >
+                        <a href="./index.html">
                             首页
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="./invest.html">
                             我要出借
                         </a>
                     </li>
@@ -66,8 +68,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            信息披露
+                        <a href="./personal.html">
+                            个人中心
                         </a>
                     </li>
                 </ul>
@@ -119,13 +121,21 @@
                     </label>
                 </div>
 
-                <div class="fb-invest-prod-button">
-                    <a href="#" class="fb-invest-now fb-reg-btn">借款人注册</a>
-                    <a href="#">借款人登录</a>
+                <div class="fb-invest-prod-button" id="login">
+                    <!-- 动态显示 -->
+                    <!-- <a href="#" class="fb-invest-now fb-reg-btn">借款人注册</a>
+
+                    <a href="#">借款人登录</a> -->
                 </div>
             </div>
+
             <h3 class="fb-invest-borrow-title">借款产品特色</h3>
+            
         </div>
+        <div class="row min-w1200" id="reg">
+            <!-- 动态生成 -->
+        </div>
+        
         <!-- 国有背景 -->
         <div class="min-w1000 footd">
             <ul class="fb-invest-borrow">
@@ -149,10 +159,10 @@
         </div>
     </div>
 
-      <!-- index-footer -->
-      <footer class="container-fl">
+    <!-- index-footer -->
+    <footer class="container-fl">
         <section class="min-w1200">
-           <div class="footer_box1">
+            <div class="footer_box1">
                 <div class="footer_1">
                     <h4>关于我们</h4>
                     <a href="#">
@@ -184,22 +194,22 @@
                         <p>用户服务协议</p>
                     </a>
                 </div>
-           </div>
+            </div>
 
 
             <div class="footer_3">
                 <h4>关于我们</h4>
-               <div class="box_div">
+                <div class="box_div">
                     <div>
                         <img src="./images/kxd_wx.jpg" alt="">
                         <p>开鑫贷</p>
                     </div>
-                    
+
                     <div>
                         <img src="./images/qrcode4.png" alt="">
                         <p>四川开鑫贷</p>
                     </div>
-               </div>
+                </div>
             </div>
 
             <div class="footer_4">
@@ -212,6 +222,7 @@
         </section>
     </footer>
 </body>
+
 </html>
 <!-- jquery -->
 <script src="./lib/jquery/jquery.min.js"></script>
