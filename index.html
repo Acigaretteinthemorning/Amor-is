@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
     <link rel="stylesheet" href="./lib/bootstrap4/css/bootstrap.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="./lib/xlPaging/css/xlPaging.css">
     <!-- common -->
     <link rel="stylesheet" href="./dist/css/common.min.css">
     <!-- index.css -->
@@ -133,6 +135,7 @@
             </a>
         </div>
     </div>
+    
     <!-- 工作时间和公告 -->
     <div class="notice container-fl">
         <div class="min-w1200">
@@ -153,8 +156,29 @@
                     更多>
                 </a>
             </div>
+            
         </div>
     </div>
+    <table class="table table-striped container">
+        <thead>
+          <tr>
+            <th scope="col">借款人</th>
+            <th scope="col">借款标题</th>
+            <th scope="col">年利率</th>
+            <th scope="col">金额</th>
+            <th scope="col">还款方式</th>
+            <th scope="col">进度</th>
+            <th scope="col">操作</th>
+          </tr>
+        </thead>
+        <tbody id="borroWlis">
+            <!-- 动 -->
+        </tbody>
+    </table>
+    <!-- 分页插件 -->
+    <ul id="page">
+        
+    </ul>
     <!-- 产品专区头部 借款 -->
     <div class="list-title container-fl">
         <div class="min-w1200">
@@ -168,6 +192,7 @@
     <!-- 小额贷款 -->
     <div class="smallloan container-fl">
         <div class="min-w1200">
+            
             <!-- 左边 -->
             <div class="smal-left">
                 <h4>小额分散</h4>
@@ -519,6 +544,7 @@
             </div>
         </div>
     </div>
+ 
 
     <!-- index-special -->
     <div class="index-special container-fl">
@@ -546,7 +572,6 @@
             </div>
         </section>
     </div>
-
 
     <!-- index-footer -->
     <footer class="container-fl">
@@ -631,9 +656,12 @@
 </html>
 <!-- jquery -->
 <script src="./lib/jquery/jquery.min.js"></script>
+<!--  -->
+<script src="./lib/xlPaging/js/jquery.xlPaging.js"></script>
 <!-- popper -->
 <script src="./lib/popper/popper.min.js"></script>
 <!-- bootstrap -->
 <script src="./lib/bootstrap4/js/bootstrap.min.js"></script>
 <!-- index -->
 <script src="./dist/js/index.min.js"></script>
+<!--  -->

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="./dist/css/getborrowinfo.min.css">
     <title>开鑫贷-个人中心</title>
 </head>
+
 <body>
     <header class="container-fl">
         <div class="min-w1200">
@@ -50,16 +52,16 @@
                         <a href="#">帮助中心</a>
                     </li>
                     <li class="divide" id="login">
-                        
+
                     </li>
-                    
+
                     <li id="reg">
-                      
+
                     </li>
                     <li>
                         <a href="./recharge.html">
-							账户充值
-						</a>
+                            账户充值
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -81,7 +83,7 @@
             <div class="nav_right">
                 <ul>
                     <li>
-                        <a href="./index.html" >
+                        <a href="./index.html">
                             首页
                         </a>
                     </li>
@@ -110,36 +112,240 @@
             </div>
         </div>
     </nav>
+    <!-- "id": "2",
+    "minbid": "10000",
+    "days": "30",
+    "title": "投资",
+    "info": "杜",
+    "borrowtime": "12",-->
     <!-- 导航栏菜单 -->
     <div class="menu container-fl">
         <!-- 导航栏菜单 -->
         <div class="min-w1200 ">
             <div class="row">
-                <div class="col-sm-3">
-                    <div>
-                        借款人
-                    </div>
+                <div class="col-sm-3 ">
+                    <div class="panel-default .panel">
+                        <div class="panel-heading">
+                            借款人
+                        </div>
 
-                    <div>
-                        <img src="./images/head_icon.jpg" alt="">
+                        <div class="panel-body">
+                            <img class="el-userhead" src="./images/head_icon.jpg" alt="">
+                            <p class="text-center">
+                                <!-- 借款人 -->
+                                <a href="#" class="text-info" id="userid">
+                                    
+                                </a>
+                            </p><br>
+                            <div>
+                                籍贯： 四川 - 成都
+                            </div>
+                            <div>
+                                专职客服：<a href="#">源码妹妹</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-
+                <div class="col-sm-6 loan">
+                    <div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>借款金额:(元)</td>
+                                    <td>
+                                        <span id="borrowmoney">
+                                            
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>已借金额:(元)</td>
+                                    <td>
+                                        <span id="ownmoney"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>借款利率:(%)</td>
+                                    <td>
+                                        <span id="interest">
+                                            
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>投标奖励:(%)</td>
+                                    <td>
+                                        <span id="bouns"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>最小投标:(元)</td>
+                                    <td>
+                                        <span id="minbid"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="form-group row">
+            
+                            <div class="col-sm-4">
+                                <input type="number" class="form-control" id="chargemoney" placeholder="投资金额...">
+                                
+                            </div>
+                            <button type="button" class="col-sm-3 btn btn-info" id="chargeBtn">确认投资</button>
+                        </div>
+                    </div>   
                 </div>
 
-                <div class="col-sm-3">
-
+                <div class="col-sm-3 loan">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>投标进度
+                                </td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 99%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>投标总数</td>
+                                <td>
+                                    <span>2</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>还需金额</td>
+                                <td>
+                                    <span>0.00元</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                    <h4>还款中</h4>
                 </div>
             </div>
+            <ul class="list-group">
+                <li class="list-group-item active">借款人信息</li>
+                <li class="list-group-item">
+                    <div>
+                        注册时间<span>2015-03-30</span> 借款额度 <span>2000</span> 性别 <span>男</span> 年龄 <span>25</span>
+                    </div>
+                    <div>
+                        文化程度 <span>硕士研究生</span> 每月收入 <span>3000-4999</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item active">审核认证信息</li>
+                <li class="list-group-item">
+                    <div>
+                        认证时态度<span>优</span> 信贷知识掌握情况 <span>优</span> 借款感言 <span>给我2000度过难关</span>
+                    </div>
+                    <div>
+                        审核员认证意见 <span>哈哈哈</span>
+                    </div>
+                </li>
+            </ul>
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">还款情况</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">还款状态</th>
+                        <th> 最近一周</th>
+                        <th>最近1月</th>
+                        <th>最近6月 </th>
+                        <th>6个月前 </th>
+                        <th>总计[?]</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">提前还款</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">准时还款</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">逾期已还</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">逾期未还</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">投标记录</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">投标人</th>
+                        <th> 年利率</th>
+                        <th>有效金额(¥)</th>
+                        <th>投标时间 </th>
+                        <th>类型 </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">si*****</th>
+                        <td>10%</td>
+                        <td>1,000.00</td>
+                        <td>2016-05-11 06:42:11</td>
+                        <td>手动投标</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">si*****</th>
+                        <td>10%</td>
+                        <td>1,000.00</td>
+                        <td>2016-05-11 06:42:11</td>
+                        <td>手动投标</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
     </div>
 
 
     <footer class="container-fl">
         <section class="min-w1200">
-           <div class="footer_box1">
+            <div class="footer_box1">
                 <div class="footer_1">
                     <h4>关于我们</h4>
                     <a href="#">
@@ -171,22 +377,22 @@
                         <p>用户服务协议</p>
                     </a>
                 </div>
-           </div>
+            </div>
 
 
             <div class="footer_3">
                 <h4>关于我们</h4>
-               <div class="box_div">
+                <div class="box_div">
                     <div>
                         <img src="./images/kxd_wx.jpg" alt="">
                         <p>开鑫贷</p>
                     </div>
-                    
+
                     <div>
                         <img src="./images/qrcode4.png" alt="">
                         <p>四川开鑫贷</p>
                     </div>
-               </div>
+                </div>
             </div>
 
             <div class="footer_4">
@@ -199,6 +405,7 @@
         </section>
     </footer>
 </body>
+
 </html>
 <!-- jquery -->
 <script src="./lib/jquery/jquery.min.js"></script>
